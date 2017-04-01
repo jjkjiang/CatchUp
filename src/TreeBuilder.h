@@ -35,7 +35,7 @@ public:
         while (getline(fs, currentLine)) {
             level = countLevels(currentLine);
 
-            
+
 
             if (level > currentLevel) {
                 //levelStack.push
