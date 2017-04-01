@@ -30,14 +30,17 @@ public:
         int level, currentLevel = -1;
         Date currentDate;
 
-        // if theres no children and its a repeat, add it anyways
-
         while (getline(fs, currentLine)) {
+            if (currentLine.empty())
+                continue;
+
             level = countLevels(currentLine);
 
             if (level == 0)
-                if (isDate(currentLine))
-                    currentDate = Date(currentLine);
+                if (isDate(currentLine)) {
+                    currentDate = Date(currentLine.substr(1, 10));
+                    continue;
+                }
 
             if (level > currentLevel) {
                 // if we are increasing the level
@@ -45,33 +48,43 @@ public:
                 // dont change anything if matching entry that has children
                 if (level - currentLevel != 1)
                     throw std::runtime_error("Error in file, level increased by more than 1");
-
-                TreeEntry* temp = findMatch(*levelStack.top()->getChildren(), currentLine);
-
-                // elif used here to prevent deferencing null ptr
-                if (temp == NULL) {
-                    temp = new TreeEntry(currentLine, currentDate);
-                    levelStack.top()->addChild(temp);
-                } else if (temp->getChildren() != 0) {
-                    temp = new TreeEntry(currentLine, currentDate);
-                    levelStack.top()->addChild(temp);
-                }
-
-                levelStack.push(temp);
-                currentLevel = level;
             } else if (level == currentLevel) {
                 levelStack.pop();
-
             } else {
-
+                int popcnt = currentLevel - level;
+                for (int i = 0; i <= popcnt; i++)
+                    levelStack.pop();
             }
+
+
+
+            TreeEntry* temp = findMatch(levelStack.top(), currentLine);
+
+            // elif used here to prevent deferencing null ptr
+            if (temp == NULL) {
+                temp = new TreeEntry(currentLine, currentDate);
+                levelStack.top()->addChild(temp);
+            } else if (temp->getChildren() != 0) {
+                temp = new TreeEntry(currentLine, currentDate);
+                levelStack.top()->addChild(temp);
+            }
+
+            levelStack.push(temp);
+            currentLevel = level;
         }
+    }
+
+    TreeEntry *getRoot() const {
+        return root;
     }
 private:
     // checks whether or not the current line indicates a new date of format
     // [YYYY/MM/DD]. Very weak checking - assumes the file used is correct.
     bool isDate(const std::string& currentLine) {
-        if (currentLine.at(0) != '[' || currentLine.at(11) != ']')
+        if (currentLine.empty())
+            throw std::runtime_error("empty string");
+
+        if (currentLine.at(0) != '[')
             return false;
         return true;
     }
@@ -91,8 +104,11 @@ private:
 
     // looks through a child vector for a matching category, otherwise returns NULL to
     // indicate adding a new value is fine. A category is defined as having existing children.
-    TreeEntry* findMatch(const std::vector<TreeEntry*>& children, std::string candidate) {
-        for (auto& i : children)
+    TreeEntry* findMatch(TreeEntry* entry, std::string candidate) {
+        if (entry->getChildren() == NULL)
+            return NULL;
+
+        for (auto& i : *entry->getChildren())
             if (i->getContent() == candidate && !i->getChildren()->empty())
                 return i;
 
