@@ -16,7 +16,11 @@ public:
         date = "0000/00/00";
     }
 
-    Date(int month, int day, int year) {
+    Date(const std::string& date) {
+        this->date = date;
+    }
+
+    Date(const int& month, const int& day, const int& year) {
         std::stringstream ss;
         ss << year << "/";
         if (month <= 9)

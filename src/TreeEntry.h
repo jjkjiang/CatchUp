@@ -13,10 +13,12 @@ class TreeEntry {
 private:
     std::string content;
     Date date;
-    std::vector<TreeEntry> children;
+    std::vector<TreeEntry*>* children;
 public:
     TreeEntry(const std::string &content, const Date &date)
-            : content(content), date(date) {}
+            : content(content), date(date) {
+        children = NULL;
+    }
 
     const std::string &getContent() const {
         return content;
@@ -26,11 +28,16 @@ public:
         return date;
     }
 
-    const std::vector<TreeEntry> &getChildren() const {
+    std::vector<TreeEntry*>* getChildren() const {
         return children;
     }
 
+    void addChild(TreeEntry* child) {
+        if (children == NULL)
+            children = new std::vector<TreeEntry*>();
 
+        children->push_back(child);
+    }
 };
 
 
