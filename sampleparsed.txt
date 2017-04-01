@@ -1,7 +1,7 @@
-[2016/7/6] 
+[2016/07/06]
 GENERAL
 -Added a new "ForceFMA" configuration option which can be set by users working with our support teams to mitigate a specific audio crash
-[2016/6/14] 
+[2016/06/14]
 HERO BALANCE CHANGES
 -McCree
 --Peacekeeper
@@ -35,7 +35,7 @@ BUG FIXES
 
 -Maps
 --Fixed an issue with collision on certain areas of Dorado not blocking line of sight
-[2016/6/21] 
+[2016/06/21]
 GENERAL
 -Disabled "Avoid This Player" functionality
 --Note: The game UI option is still active, but will be removed in a future patch
@@ -47,13 +47,13 @@ BUG FIXES
 -Fixed even more bugs that allowed Reaper to Shadow Step to unintended locations on certain maps
 -Fixed a bug that would sometimes cause projectiles to hit Reinhardt instead of his Barrier Field in "High Bandwidth" Custom Games
 -Fixed several client crashes
-[2016/6/23] 
+[2016/06/23]
 BUG FIXES
 -Implemented a potential fix to help address framerate drops following our June 14 patch
 --Note: This fix may not resolve the issue for all players. If you continue to experience FPS drops after patching, please post in our Technical Support forum.
 
 -Fixed an issue that caused non-standard buttons on some mice to no longer respond, as well as some mice to stop registering altogether
-[2016/6/28] 
+[2016/06/28]
 PATCH FEATURES
 
 -New Feature: Competitive Play
@@ -110,7 +110,7 @@ BUG FIXES
 ---Note: We fixed this issue in an earlier patch for "High Bandwidth" Custom Games; this fix now applies it to all games
 --Fixed a bug that allowed Torbjörn to pick up Scrap while dead
 
-[2016/7/6] 
+[2016/07/6]
 	
 GENERAL
 -Competitive Play
