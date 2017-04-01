@@ -62,7 +62,7 @@ public:
 
 
             if (temp == NULL) {
-                temp = new TreeEntry(currentLine, currentDate);
+                temp = new TreeEntry(currentLine.substr(level), currentDate);
                 levelStack.top()->addChild(temp);
             }
 
