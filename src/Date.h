@@ -7,6 +7,7 @@
 
 #include <string>
 #include <sstream>
+#include <ostream>
 
 class Date {
 private:
@@ -44,6 +45,11 @@ public:
 
     bool operator== (Date rhs) {
         return date == rhs.date;
+    }
+
+    friend std::ostream &operator<<(std::ostream &os, const Date &date) {
+        os << date.date;
+        return os;
     }
 };
 

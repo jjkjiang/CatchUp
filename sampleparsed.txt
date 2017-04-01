@@ -1,6 +1,3 @@
-[2016/07/06]
-GENERAL
--Added a new "ForceFMA" configuration option which can be set by users working with our support teams to mitigate a specific audio crash
 [2016/06/14]
 HERO BALANCE CHANGES
 -McCree
@@ -110,7 +107,7 @@ BUG FIXES
 ---Note: We fixed this issue in an earlier patch for "High Bandwidth" Custom Games; this fix now applies it to all games
 --Fixed a bug that allowed Torbjörn to pick up Scrap while dead
 
-[2016/07/6]
+[2016/07/06]
 	
 GENERAL
 -Competitive Play
@@ -156,4 +153,6 @@ Competitive Play
 -Fixed an issue where you would still receive a Competitive Play “leave” penalty even if you rejoined a match and completed it
 --Note: If you leave a single Competitive Play match more than 3 times, you will receive a Competitive Play “leave” penalty even if you complete the match.
 
-
+[2016/07/06]
+GENERAL
+-Added a new "ForceFMA" configuration option which can be set by users working with our support teams to mitigate a specific audio crash

@@ -60,11 +60,8 @@ public:
 
             TreeEntry* temp = findMatch(levelStack.top(), currentLine);
 
-            // elif used here to prevent deferencing null ptr
+
             if (temp == NULL) {
-                temp = new TreeEntry(currentLine, currentDate);
-                levelStack.top()->addChild(temp);
-            } else if (temp->getChildren() != 0) {
                 temp = new TreeEntry(currentLine, currentDate);
                 levelStack.top()->addChild(temp);
             }
