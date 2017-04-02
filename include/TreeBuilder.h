@@ -58,6 +58,9 @@ public:
 
             level = countLevels(currentLine);
 
+            if (currentLine.substr(level).empty())
+                continue;
+
             if (level == 0)
                 if (isDate(currentLine)) {
                     currentDate = Date(currentLine.substr(1, 10));
@@ -77,8 +80,6 @@ public:
                 for (int i = 0; i <= popcnt; i++)
                     levelStack.pop();
             }
-
-
 
             TreeEntry* temp = findMatch(levelStack.top(), currentLine);
 

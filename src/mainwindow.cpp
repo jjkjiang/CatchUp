@@ -1,9 +1,10 @@
-#include "include/mainwindow.h"
+#include "../include/mainwindow.h"
 #include "ui_mainwindow.h"
 
 #include <QFileDialog>
 #include <QDesktopServices>
 #include <QMessageBox>
+#include <QInputDialog>
 #include <algorithm>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -47,8 +48,17 @@ void MainWindow::on_actionSave_triggered()
     );
 
     //call class code here, write
+    if (filename == NULL)
+        return;
 
-    //QMessageBox::information(this,tr("Status"),"Saved!");
+    std::ofstream of;
+    of.open(filename.toStdString().c_str());
+
+    of << treeFilterer.getResult();
+
+    of.close();
+
+    QMessageBox::information(this,tr("Status"),"Saved!");
 }
 
 void MainWindow::on_actionOpen_File_triggered()
@@ -106,4 +116,34 @@ void MainWindow::updateTextBrowser() {
 void MainWindow::on_actionReport_Bugs_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://github.com/jjkjiang/CatchUp/issues"));
+}
+
+void MainWindow::on_actionDisplay_Dates_triggered()
+{}
+
+void MainWindow::on_actionDisplay_Dates_toggled(bool arg1)
+{
+    treeFilterer.setShowDate(arg1);
+    filter();
+}
+
+void MainWindow::on_actionChange_Indent_triggered()
+{
+
+    QString text = QInputDialog::getText(this, "Input the indent", "Indent:", QLineEdit::Normal);
+    treeFilterer.setIndentStr(text.toStdString());
+}
+
+void MainWindow::on_actionRestore_Defaults_triggered()
+{
+    treeFilterer.setShowDate(true);
+    QDate date = QDate::currentDate();
+    ui->dateEdit_2->setDate(date);
+    treeFilterer.setEndDate(qDateToDate(date));
+    treeFilterer.setIndentStr("  ");
+}
+
+void MainWindow::on_actionUsage_triggered()
+{
+    QMessageBox::information(this,tr("Usage"),"Specify the location of the .txt file that has been parsed, and then choose the date gap you want.");
 }

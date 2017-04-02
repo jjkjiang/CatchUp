@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>CatchUp</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -174,14 +174,7 @@
            </widget>
           </item>
          </layout>
-         <zorder>pushButton</zorder>
-         <zorder>label</zorder>
          <zorder>label_2</zorder>
-         <zorder>pushButton</zorder>
-         <zorder>label_3</zorder>
-         <zorder>label</zorder>
-         <zorder>dateEdit</zorder>
-         <zorder>dateEdit_2</zorder>
          <zorder>pushButton</zorder>
          <zorder>label_3</zorder>
          <zorder>dateEdit</zorder>
@@ -207,11 +200,16 @@
      <string>Help</string>
     </property>
     <addaction name="actionReport_Bugs"/>
+    <addaction name="actionUsage"/>
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
      <string>Settings</string>
     </property>
+    <addaction name="actionDisplay_Dates"/>
+    <addaction name="actionChange_Indent"/>
+    <addaction name="separator"/>
+    <addaction name="actionRestore_Defaults"/>
    </widget>
    <widget class="QMenu" name="menuFile">
     <property name="title">
@@ -252,6 +250,35 @@
   <action name="actionReport_Bugs">
    <property name="text">
     <string>Report Bugs</string>
+   </property>
+  </action>
+  <action name="actionDisplay_Dates">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Display Dates</string>
+   </property>
+  </action>
+  <action name="actionChange_Indent">
+   <property name="text">
+    <string>Change Indent</string>
+   </property>
+  </action>
+  <action name="actionRestore_Defaults">
+   <property name="text">
+    <string>Restore Defaults</string>
+   </property>
+  </action>
+  <action name="actionUsage">
+   <property name="text">
+    <string>Usage</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
    </property>
   </action>
  </widget>

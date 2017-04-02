@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QTextStream>
-#include <QtCore/QDate>
 #include "TreeBuilder.h"
 #include "TreeFilterer.h"
 
@@ -26,7 +25,17 @@ private slots:
     void on_dateEdit_editingFinished();
     void on_dateEdit_2_editingFinished();
 
+    void on_actionChange_Indent_triggered();
+
     void on_actionReport_Bugs_triggered();
+
+    void on_actionDisplay_Dates_triggered();
+
+    void on_actionDisplay_Dates_toggled(bool arg1);
+
+    void on_actionRestore_Defaults_triggered();
+
+    void on_actionUsage_triggered();
 
 private:
     Date qDateToDate(QDate qdate);
