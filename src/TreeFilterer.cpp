@@ -4,6 +4,14 @@
 
 #include "TreeFilterer.h"
 
+TreeFilterer::TreeFilterer() {
+    root = NULL;
+    indentStr = "  ";
+    startDate = Date();
+    endDate = Date();
+    showDate = true;
+}
+
 TreeFilterer::TreeFilterer(TreeEntry* root, Date startDate, Date endDate) {
     this->root = root;
     indentStr = "  ";
@@ -70,13 +78,18 @@ void TreeFilterer::filter() {
 }
 
 void TreeFilterer::filter(TreeEntry* entry, int indent) {
-    if (startDate < entry->getDate() && endDate > entry->getDate()) {
+    // if i ever go back to this code, fix this more
+    // elegantly
+
+    if (entry->hasFittingChild(startDate, endDate)) {
         for (int i = 0; i < indent; i++)
             out << indentStr;
 
-        if (showDate)
+        if (showDate && entry->getChildren() == NULL)
             out << "[" <<entry->getDate() << "] ";
-        out << entry->getContent();
+        else if (showDate && entry->getChildren()->size() < 2)
+            out << "[" <<entry->getDate() << "] ";
+        out << entry->getContent() << std::endl;
 
 
         // when you use auto for loops to save work but

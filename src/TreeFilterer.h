@@ -17,6 +17,7 @@ private:
     Date endDate;
     bool showDate;
 public:
+    TreeFilterer();
     TreeFilterer(TreeEntry* root, Date startDate, Date endDate);
 
     TreeEntry *getRoot() const;
