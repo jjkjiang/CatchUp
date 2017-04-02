@@ -15,9 +15,31 @@ private:
     TreeEntry* root;
 public:
     TreeBuilder() {
-        root = new TreeEntry("", Date());
+        root = NULL;
     }
+
+    void recursiveRemove(TreeEntry* entry) {
+        if (entry == NULL)
+            return;
+
+        if (entry->getChildren() == NULL) {
+            delete entry;
+            return;
+        }
+
+        for (auto& i : *entry->getChildren()) {
+            recursiveRemove(i);
+        }
+
+        delete entry->getChildren();
+        delete entry;
+        return;
+    }
+
     void build(std::string filename) {
+        recursiveRemove(root);
+        root = new TreeEntry("", Date());
+
         std::fstream fs;
         fs.open(filename.c_str());
 

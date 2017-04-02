@@ -38,6 +38,21 @@ public:
 
         children->push_back(child);
     }
+
+    bool hasFittingChild(Date startDate, Date endDate) {
+        if (children == NULL && startDate < date && endDate > date)
+            return true;
+
+        if (children == NULL)
+            return false;
+
+        for (auto& i : *children) {
+            if (i->hasFittingChild(startDate, endDate))
+                return true;
+        }
+
+        return false;
+    }
 };
 
 

@@ -1,4 +1,4 @@
-[2016/06/14]
+Ôªø[2016/06/14]
 HERO BALANCE CHANGES
 -McCree
 --Peacekeeper
@@ -9,7 +9,7 @@ HERO BALANCE CHANGES
 -Developer Comments: McCree was performing too well against all targets, making him feel like a must-pick in many situations. By reducing the damage of his alternate fire, McCree is now significantly weaker against tanks like Roadhog and Reinhardt, but still maintains his lethality against smaller targets like Tracer and Genji. 
 
 -Widowmaker
---Widowís Kiss
+--Widow‚Äôs Kiss
 ---Alternate Fire (Scoped Shot)
 ----Base damage decreased from 15 to 12
 -----Note: Scoped shot damage multiplier remains unchanged
@@ -19,7 +19,7 @@ HERO BALANCE CHANGES
 --Infra-Sight
 ---Ultimate cost increased by 10%
 
--Developer Comments: In the right hands, Widowmaker can often feel unstoppableóeven when just landing body shots instead of critical heads shots. The changes to her alternate fire weaken body shot damage while leaving her headshot damage unchanged. Additionally, we felt her Ultimate ability, Infra-Sight, was coming up a little too frequently, especially considering its impact on the game. 
+-Developer Comments: In the right hands, Widowmaker can often feel unstoppable‚Äîeven when just landing body shots instead of critical heads shots. The changes to her alternate fire weaken body shot damage while leaving her headshot damage unchanged. Additionally, we felt her Ultimate ability, Infra-Sight, was coming up a little too frequently, especially considering its impact on the game. 
 
 BUG FIXES
 
@@ -56,9 +56,9 @@ PATCH FEATURES
 -New Feature: Competitive Play
 -Overwatch is raising the bar for competitive players, giving them the perfect arena to sharpen their skills and hone their strategies. Introducing Competitive Play.
 
--Competitive Play is designed for players who truly want to put their skills to the test, and offers a more serious experience than our Quick Play or Weekly Brawl! modes. To make sure everyone playing the mode has a solid understanding of the gameís mechanics, maps, and heroes, Competitive Play will be locked until you hit level 25.
+-Competitive Play is designed for players who truly want to put their skills to the test, and offers a more serious experience than our Quick Play or Weekly Brawl! modes. To make sure everyone playing the mode has a solid understanding of the game‚Äôs mechanics, maps, and heroes, Competitive Play will be locked until you hit level 25.
 
--Once you reach level 25, the mode will become available under the ìPlayî button in the main menu. Simply select "Competitive Play" from the submenu, and youíre ready to enter a match. You can join on your own or in a group, and Overwatchís matchmaking system will automatically find the best game possible for your (or your group's) skill level.
+-Once you reach level 25, the mode will become available under the ‚ÄúPlay‚Äù button in the main menu. Simply select "Competitive Play" from the submenu, and you‚Äôre ready to enter a match. You can join on your own or in a group, and Overwatch‚Äôs matchmaking system will automatically find the best game possible for your (or your group's) skill level.
 
 -Competitive Play is live right now! To learn more about this new feature, click here.
 
@@ -85,7 +85,7 @@ GENERAL UPDATES
 BUG FIXES
 
 -General
---Fixed a bug that would cause playersí weapons to auto-snap straight up or down when the crosshair was aimed between 85 and 90 degrees
+--Fixed a bug that would cause players‚Äô weapons to auto-snap straight up or down when the crosshair was aimed between 85 and 90 degrees
 --Fixed a bug that caused players who backfilled and then completed a game to sometimes receive a loss on their Career Profile and not receive their XP bonus for backfilling
 --Fixed a bug that would move players toward the source of a knockback rather than away from it
 --Fixed a bug that allowed players to spam objective-based voice lines
@@ -102,10 +102,10 @@ BUG FIXES
 
 
 -Heroes
---Fixed a bug with the "Junkrat RIP-Tire KillsóAverage" lifetime statistic
+--Fixed a bug with the "Junkrat RIP-Tire Kills‚ÄîAverage" lifetime statistic
 --Fixed a bug that would sometimes cause projectiles to hit Reinhardt instead of his Barrier Field
 ---Note: We fixed this issue in an earlier patch for "High Bandwidth" Custom Games; this fix now applies it to all games
---Fixed a bug that allowed Torbjˆrn to pick up Scrap while dead
+--Fixed a bug that allowed Torbj√∂rn to pick up Scrap while dead
 
 [2016/07/06]
 	
@@ -113,16 +113,16 @@ GENERAL
 -Competitive Play
 --[PC Only] The duration of Sudden Death has been adjusted across all maps from 1m45s to the following values:
 ---Assault:
-----Hanamura ñ 1m35s
-----Temple of Anubis ñ 1m30s
-----Volskaya Industries ñ 1m35s
+----Hanamura ‚Äì 1m35s
+----Temple of Anubis ‚Äì 1m30s
+----Volskaya Industries ‚Äì 1m35s
 ---Escort:
-----Dorado ñ 1m30s
-----Route 66 ñ 1m35s
-----Watchpoint: Gibraltar ñ 1m35s
+----Dorado ‚Äì 1m30s
+----Route 66 ‚Äì 1m35s
+----Watchpoint: Gibraltar ‚Äì 1m35s
 ---Hybrid:
-----Kingís Row ñ 1m30s
-----Numbani ñ 1m50s
+----King‚Äôs Row ‚Äì 1m30s
+----Numbani ‚Äì 1m50s
 ---Note: Sudden Death duration is unchanged for Hollywood and remains at 1m45s
 
 
@@ -130,7 +130,7 @@ BUG FIXES
 
 General
 -[PC Only] Fixed a bug that prevented Overtime music from playing on Escort and Assault/Escort maps, if the payload was nearing the final checkpoint
--[PC Only] Fixed a bug where display settings werenít always saved after restarting the client
+-[PC Only] Fixed a bug where display settings weren‚Äôt always saved after restarting the client
 -[PC Only] Fixed an issue that sometimes caused the in-game UI to display incorrectly at 4k resolutions
 -[PC Only] Fixed a bug where sometimes the wrong player level would appear in the Social menu
 
@@ -140,18 +140,18 @@ Maps
 
 
 Heroes
--[PC Only] Fixed a bug that caused Mercyís Caduceus Staff beam to disconnect from its target if the player a) quickly switched between healing and damage beams by holding down both mouse buttons and/or b) was facing away from the target at the time of the switch
+-[PC Only] Fixed a bug that caused Mercy‚Äôs Caduceus Staff beam to disconnect from its target if the player a) quickly switched between healing and damage beams by holding down both mouse buttons and/or b) was facing away from the target at the time of the switch
 -[PC Only] Fixed even more bugs that allowed Reaper to Shadow Step to unintended locations on certain maps
--[PC Only] Fixed a bug that caused Winstonís melee attack during Primal Rage to inconsistently hit targets in range
--[PC Only] Fixed a bug that sometimes caused Zaryaís alternate fire to scale incorrectly with her damage boost modifier
+-[PC Only] Fixed a bug that caused Winston‚Äôs melee attack during Primal Rage to inconsistently hit targets in range
+-[PC Only] Fixed a bug that sometimes caused Zarya‚Äôs alternate fire to scale incorrectly with her damage boost modifier
 
 
 Competitive Play
--[PC Only] Fixed a bug that caused the ìTop 500î icon to incorrectly display for certain players in various places throughout the game UI
+-[PC Only] Fixed a bug that caused the ‚ÄúTop 500‚Äù icon to incorrectly display for certain players in various places throughout the game UI
 -Fixed an issue where if you left and rejoined an in-progress Competitive Play match, the game would still track the match as a loss in your placement match history and when determining the amount of Skill Rating you receive for completing a match even if your team won
---Note: You must be present for the conclusion of the match to be eligible for the win. If you leave a match and do not rejoin again before itís over, it will count as a loss both in placement match history and when calculating your Skill Rating adjustment.
--Fixed an issue where you would still receive a Competitive Play ìleaveî penalty even if you rejoined a match and completed it
---Note: If you leave a single Competitive Play match more than 3 times, you will receive a Competitive Play ìleaveî penalty even if you complete the match.
+--Note: You must be present for the conclusion of the match to be eligible for the win. If you leave a match and do not rejoin again before it‚Äôs over, it will count as a loss both in placement match history and when calculating your Skill Rating adjustment.
+-Fixed an issue where you would still receive a Competitive Play ‚Äúleave‚Äù penalty even if you rejoined a match and completed it
+--Note: If you leave a single Competitive Play match more than 3 times, you will receive a Competitive Play ‚Äúleave‚Äù penalty even if you complete the match.
 
 [2016/07/06]
 GENERAL
