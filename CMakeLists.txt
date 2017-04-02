@@ -15,7 +15,7 @@ find_package( Qt5Core REQUIRED )
 find_package( Qt5Widgets REQUIRED )
 find_package( Qt5Gui REQUIRED )
 
-set(SOURCE_FILES src/main.cpp src/TreeEntry.cpp src/TreeEntry.h src/Date.cpp src/Date.h src/TreeBuilder.cpp src/TreeBuilder.h src/TreeFilterer.cpp src/TreeFilterer.h src/mainwindow.cpp src/mainwindow.h)
+set(SOURCE_FILES src/main.cpp src/TreeEntry.cpp include/TreeEntry.h src/Date.cpp include/Date.h src/TreeBuilder.cpp include/TreeBuilder.h src/TreeFilterer.cpp include/TreeFilterer.h src/mainwindow.cpp include/mainwindow.h)
 add_executable(CatchUp ${SOURCE_FILES})
 
 target_link_libraries(CatchUp Qt5::Widgets Qt5::Gui Qt5::Core)
