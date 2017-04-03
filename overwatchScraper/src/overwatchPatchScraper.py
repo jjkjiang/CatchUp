@@ -3,11 +3,22 @@ from urllib import urlopen
 
 file = open("patchnotes.txt", "w");
 
+tempDict = {}
 for page in range(1, 7):
     url = "https://playoverwatch.com/en-us/game/patch-notes/pc/?page=" + str(page)
     page = urlopen(url)
 
     soup = BeautifulSoup(page, "html.parser")
+
+    def findMinKey (tempDict):
+        keyList = []
+        for key in tempDict:
+            keyList.append(str(key))
+        smallestKey = keyList[0]
+        for key in keyList:
+            if str(key) < smallestKey:
+                smallestKey = str(key)
+        return smallestKey                     
 
     def dateHandling (date):
         sept13 = date
@@ -39,12 +50,12 @@ for page in range(1, 7):
         intDate = int(date)
         if intDate < 10:
             date = date[-1:]
-            fixedDate = fixedDate + "0" + date + "]"
+            fixedDate = fixedDate + "0" + date + "]\n"
         else:
             fixedDate = fixedDate + date + "]\n"
 
         return fixedDate
-    def listHandling (info, count):
+    def listHandling (info, count, data):
         whitespace = "\r\n\t"
         for bullet in info.find_all("li", recursive = False):
             bulletText = bullet.get_text()
@@ -52,26 +63,34 @@ for page in range(1, 7):
             for nestedList in bullet.find_all("ul", recursive = False):
                 nestedText = nestedList.get_text()
                 bulletText = bulletText.replace(nestedText,'')
-                file.write(("-" * count + bulletText.strip(whitespace) + "\n").encode('utf-8'))
+                data.append(("-" * count + bulletText.strip(whitespace) + "\n").encode('utf-8'))
                 newcount = count + 1
-                listHandling(nestedList, newcount)
+                listHandling(nestedList, newcount, data)
                 flag = True
             if flag == False:
-                file.write(("-" * count + bulletText.strip(whitespace) + "\n").encode('utf-8'))
-
+                data.append(("-" * count + bulletText.strip(whitespace) + "\n").encode('utf-8'))
     for patch in soup.find_all("div", attrs={"class":"patch-notes-body"}):
         date = patch.find("h1")
         dateString = date.get_text()
-        file.write((dateHandling(dateString)))
+        #file.write((dateHandling(dateString)))
+        data = []
         for info in patch.find_all(["h2","p", "ul"], recursive = False):
             count = 1
             if info.name == "ul":
-                listHandling(info, count + 1)
+                listHandling(info, count + 1, data)
             elif info.name == "h2":
                 infoString = info.get_text()
                 infoString = infoString.encode('utf-8')
-                file.write(infoString + "\n")
+                data.append(infoString + "\n")
             else:
                 infoString = "-" + info.get_text()
                 infoString = infoString.encode('utf-8')
-                file.write(infoString + "\n")
+                data.append(infoString + "\n")
+        tempDict[(dateHandling(dateString))] = data
+while tempDict: 
+    earliestDate = findMinKey(tempDict)
+    file.write(earliestDate)
+    earliestDateInfo = tempDict[earliestDate]
+    for info in earliestDateInfo:
+       file.write(info)
+    del tempDict[earliestDate]
