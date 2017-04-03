@@ -53,12 +53,12 @@ public:
         Date currentDate;
 
         while (getline(fs, currentLine)) {
-            if (currentLine.empty())
+            if (currentLine.empty() || currentLine == "-\n")
                 continue;
 
             level = countLevels(currentLine);
 
-            if (currentLine.substr(level).empty())
+            if (level == currentLine.size())
                 continue;
 
             if (level == 0)
@@ -82,7 +82,6 @@ public:
             }
 
             TreeEntry* temp = findMatch(levelStack.top(), currentLine);
-
 
             if (temp == NULL) {
                 temp = new TreeEntry(currentLine.substr(level), currentDate);
@@ -112,11 +111,15 @@ private:
     // uses the parsed file's '-' characters to indicate which "level" in the stack
     // we are at
     int countLevels(const std::string& currentLine) {
+        return currentLine.find_first_not_of('-');
+
+
         char frontChar = currentLine.at(0);
         unsigned cnt = 0;
         while (frontChar == '-') {
             cnt++;
-            frontChar = currentLine.at(cnt);
+            if (cnt != currentLine.size())
+                frontChar = currentLine.at(cnt);
         }
 
         return cnt;
@@ -128,8 +131,10 @@ private:
         if (entry->getChildren() == NULL)
             return NULL;
 
-        for (auto& i : *entry->getChildren())
-            if (i->getContent() == candidate && !i->getChildren()->empty())
+        candidate = candidate.substr(candidate.find_first_not_of('-'));
+
+        for (auto i : *entry->getChildren())
+            if (i->getContent() == candidate) //&& i->getChildren() != NULL)
                 return i;
 
         return NULL;

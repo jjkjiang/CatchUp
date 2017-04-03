@@ -132,6 +132,7 @@ void MainWindow::on_actionChange_Indent_triggered()
 
     QString text = QInputDialog::getText(this, "Input the indent", "Indent:", QLineEdit::Normal);
     treeFilterer.setIndentStr(text.toStdString());
+    filter();
 }
 
 void MainWindow::on_actionRestore_Defaults_triggered()
@@ -141,6 +142,7 @@ void MainWindow::on_actionRestore_Defaults_triggered()
     ui->dateEdit_2->setDate(date);
     treeFilterer.setEndDate(qDateToDate(date));
     treeFilterer.setIndentStr("  ");
+    filter();
 }
 
 void MainWindow::on_actionUsage_triggered()

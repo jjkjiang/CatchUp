@@ -1,0 +1,815 @@
+[2016/05/26]
+GENERAL:
+-Added a new "ForceFMA" configuration option which can be set by users working with our support teams to mitigate a specific audio crash
+[2016/06/21]
+A new patch is now live on Windows PC. Read below to learn about the latest changes.
+To share your feedback, please post in the General Discussion forum.
+For a list of known issues, visit our Bug Report forum.
+For troubleshooting assistance, visit our Technical Support forum.
+
+GENERAL
+-Disabled "Avoid This Player" functionality
+--Note: The game UI option is still active, but will be removed in a future patch
+-Developer comments: The "Prefer"/"Avoid" player system was designed with the best intentions; however, it's not currently performing in a way that we feel is healthy for the game. While the "Prefer This Player" option is more or less working as intended (and is thus still enabled), the "Avoid This Player" option has impacted the matchmaker in negative way and led to some very poor player experiences. Although we like the idea of being able to say "hey, I'd prefer not to play with this player," the implementation of the mechanic is not where it needs to be, so we've disabled it and will be removing the UI option in a future patch. 
+BUG FIXES
+-Fixed even more bugs that allowed Reaper to Shadow Step to unintended locations on certain maps
+-Fixed a bug that would sometimes cause projectiles to hit Reinhardt instead of his Barrier Field in "High Bandwidth" Custom Games
+-Fixed several client crashes
+[2016/06/23]
+BUG FIXES
+-Implemented a potential fix to help address framerate drops following our June 14 patch
+--Note: This fix may not resolve the issue for all players. If you continue to experience FPS drops after patching, please post in our Technical Support forum.
+-Fixed an issue that caused non-standard buttons on some mice to no longer respond, as well as some mice to stop registering altogether
+[2016/06/28]
+A new patch is now live on Windows PC. Read below to learn about the latest changes.
+To share your feedback, please post in the General Discussion forum.
+For a list of known issues, visit our Bug Report forum.
+For troubleshooting assistance, visit our Technical Support forum.
+
+PATCH FEATURES
+-New Feature: Competitive Play
+Overwatch is raising the bar for competitive players, giving them the perfect arena to sharpen their skills and hone their strategies. Introducing Competitive Play.
+-Competitive Play is designed for players who truly want to put their skills to the test, and offers a more serious experience than our Quick Play or Weekly Brawl! modes. To make sure everyone playing the mode has a solid understanding of the game’s mechanics, maps, and heroes, Competitive Play will be locked until you hit level 25.
+-Once you reach level 25, the mode will become available under the "Play" button in the main menu. Simply select "Competitive Play" from the submenu, and you're ready to enter a match. You can join on your own or in a group, and Overwatch’s matchmaking system will automatically find the best game possible for your (or your group's) skill level.
+-Competitive Play is live right now! To learn more about this new feature, click here.
+GENERAL UPDATES
+-Gamepad Controls
+--Players can now swap the left and right sticks on a control pad
+--"Legacy" controls option has been added:
+---Left stick up/down moves forward/backward
+---Left stick left/right turns left/right
+---Right stick up/down aims up/down (these can be inverted)
+---Right stick left/right strafes left/right
+---Sticks can also be switched
+--Improved dead-zone controls, giving players increased accuracy during off-center and diagonal stick movement
+-Miscellaneous
+--When activating Widowmaker's Ultimate ability, Infra-Sight, her voice line will now be audible map-wide
+--"Weapons" section added to the Hero Gallery
+--Added McCree as an AI hero in Practice vs. AI, Play vs. AI, and Custom Game modes
+--Added a variety of a social options to the hero selection and end of match screens
+--Removed "Avoid This Player" option from the game UI
+BUG FIXES
+-General
+--Fixed a bug that would cause players’ weapons to auto-snap straight up or down when the crosshair was aimed between 85 and 90 degrees
+--Fixed a bug that caused players who backfilled and then completed a game to sometimes receive a loss on their Career Profile and not receive their XP bonus for backfilling
+--Fixed a bug that would move players toward the source of a knockback rather than away from it
+--Fixed a bug that allowed players to spam objective-based voice lines
+--Fixed a bug that caused Hearthstone-themed sprays to ignore localization
+--Fixed several framerate issues that could occur when cycling through the hero selection menu
+--Fixed a variety of issues with and made several improvements to ambient lighting
+--Made some improvements to how AI heroes respond to one another 
+--Made a variety of performance and optimization improvements across the game
+--Unicode keys for non-English keyboards are now displayed properly in the keybinding interface
+-Maps
+--Players can no longer be resurrected in out-of-play areas on Ilios
+-Heroes
+--Fixed a bug with the "Junkrat RIP-Tire Kills—Average" lifetime statistic
+--Fixed a bug that would sometimes cause projectiles to hit Reinhardt instead of his Barrier Field
+---Note: We fixed this issue in an earlier patch for "High Bandwidth" Custom Games; this fix now applies it to all games
+--Fixed a bug that allowed Torbjörn to pick up Scrap while dead
+[2016/07/06]
+GENERAL
+-Competitive Play
+--The duration of Sudden Death has been adjusted across all maps from 1m45s to the following values:
+---Assault:
+----Hanamura – 1m35s
+----Temple of Anubis – 1m30s
+----Volskaya Industries – 1m35s
+---Escort:
+----Dorado – 1m30s
+----Route 66 – 1m35s
+----Watchpoint: Gibraltar – 1m35s
+---Hybrid:
+----King’s Row – 1m30s
+----Numbani – 1m50s
+---Note: Sudden Death duration is unchanged for Hollywood, which remains at 1m45s
+
+
+BUG FIXES
+
+-General
+--Fixed a bug that prevented Overtime music from playing on Escort and Assault/Escort maps, if the payload was nearing the final checkpoint
+--Fixed a bug where display settings weren’t always saved after restarting the client
+--Fixed an issue that sometimes caused the in-game UI to display incorrectly at 4k resolutions
+--Fixed a bug where sometimes the wrong player level would appear in the Social menu
+
+-Maps
+--Fixed an issue with collision not blocking line of sight on certain areas of Nepal
+
+-Heroes
+--Fixed a bug that caused Mercy’s Caduceus Staff beam to disconnect from its target if the player a) quickly switched between healing and damage beams by holding down both mouse buttons and/or b) was facing away from the target at the time of the switch
+--Fixed even more bugs that allowed Reaper to Shadow Step to unintended locations on certain maps
+--Fixed a bug that caused Winston’s melee attack during Primal Rage to inconsistently hit targets in range
+--Fixed a bug that sometimes caused Zarya’s alternate fire to scale incorrectly with her damage boost modifier
+
+-Competitive Play
+--Fixed a bug that caused the “Top 500” icon to incorrectly display for certain players in various places throughout the game UI
+--Fixed an issue where if you left and rejoined an in-progress Competitive Play match, the game would still track the match as a loss in your placement match history and when determining the amount of Skill Rating you receive for completing a match even if your team won
+---Note: You must be present for the conclusion of the match to be eligible for the win. If you leave a match and do not rejoin again before it’s over, it will count as a loss both in your placement match history and when calculating your Skill Rating adjustment.
+--Fixed an issue where you would still receive a Competitive Play “leave” penalty even if you rejoined a match and completed it
+---Note: If you leave a single Competitive Play match more than 3 times, you will receive a Competitive Play “leave” penalty even if you complete the match. 
+
+[2016/07/19]
+PATCH FEATURES
+-New Hero: Ana (Support)
+-After being out of the fight for several years, one of Overwatch's founding members is returning. Introducing Ana—a battle-scarred veteran who supports her teammates from a distance using a unique and highly specialized collection of weapons.
+-Ana’s primary weapon is her Biotic Rifle, which fires long-range darts that can restore the health of her allies or deal ongoing damage to her enemies. Meanwhile, her Biotic Grenade is perfect for a close-quarters clash, simultaneously healing teammates and injuring foes caught in its small area of effect. (Affected allies will also receive a temporary increase to all incoming healing, while affected enemies can’t be healed for a few moments.) And if the battle starts to get out of hand, Ana's sidearm can fire a Sleep Dart, knocking her adversaries unconscious.
+-Plus, Ana's ultimate ability, Nano Boost, empowers one of her teammates, granting faster movement, increased damage, and resistance to enemy attacks.
+-To learn more about Ana, click here.
+GENERAL UPDATES
+-Gameplay
+--If a match goes into Overtime for more than 20 seconds, the fuse will now start to "burn down" more quickly
+--Players now respawn more slowly during Overtime (increased spawn time by 2 seconds)
+-Competitive Play
+--Competitive Play matches can now only have one of each hero per team.
+---For more info, click here.
+-Miscellaneous
+--Added Ana as an AI-controlled hero in Practice vs. AI, Play vs. AI, and Custom Game modes
+--Timing on Zenyatta's Rapid Discord achievement is more lenient
+--Targeted teammates now respond by saying "I'm with you," when players use the “Group Up” communication
+--Renamed five sprays to avoid duplicate titles
+HERO BALANCE UPDATES
+-General
+--Self-healing abilities now charge ultimate abilities. As a result, some heroes’ ultimate costs have been adjusted (see below).
+-Bastion
+--Configuration: Tank
+---Ultimate cost increased by 10%
+-D.Va
+--Defense Matrix
+---Cooldown decreased from 10 seconds to 1 second
+---A new resource meter has been added. This meter will deplete while Defense Matrix is active and then recharge when it’s not in use.
+----Defense Matrix takes 10 seconds to reach full charge from empty
+----At a full charge, Defense Matrix will last for 4 seconds
+----Defense Matrix will now remain active as long as its assigned hotkey is held
+---Defense Matrix has been reclassified as an alternate fire and is now bound to RMB (by default)
+----An option to "Toggle Defense Matrix" has been added under Options > Controls > D.Va
+--Self-Destruct
+---Ultimate cost decreased by 15%
+---Explosion delay reduced from 4 seconds to 3 seconds
+---Explosion no longer damages D.Va (the player who activates it)
+-Developer Notes: D.Va isn't being selected as often as our other tanks, and we feel a lot of that stems from the underperformance of her damage absorption abilities. So, we've reconfigured her Defensive Matrix, making it more flexible and giving players the ability to use it more often. We’ve also given Self-Destruct a little more oomph, because it felt slightly underwhelming when compared to many of Overwatch's other ultimate abilities.
+
+-Lúcio
+--Sound Barrier
+---Ultimate cost increased by 10%
+-McCree
+--Peacekeeper
+---Now maintains full damage at longer distances, but will deal less damage at extreme ranges
+-Developer Notes: While the game does feel better following the nerf to McCree’s close-range damage in a previous patch, it left him a little too weak. So, we're increasing his effective distance, making his range similar to Soldier: 76’s. This should hopefully give players another option for dealing with pesky long-range damage dealing heroes like Pharah and Hanzo. 
+
+-Mercy
+--Caduceus Staff
+---Damage Boost
+----Effect will no longer stack with bonus damage provided by another Mercy
+--Resurrect
+---Ultimate charge cost increased by 30%
+---Movement is no longer prevented during activation
+---Guardian Angel instantly resets upon use
+-Developer Notes: Mercy's ultimate is one of the most powerful abilities in the game; however, players would often fly into the fray and die while using it. With this update, Resurrect will now take a bit longer to charge, but Mercy will be a lot safer when activating the ability in the middle of combat. 
+
+-Roadhog
+--Whole Hog
+---Ultimate cost increased by 45%
+-Soldier: 76
+--Heavy Pulse Rifle
+---Spread recovery will begin after a short delay (rather than instantly)
+--Tactical Visor
+---Ultimate cost increased by 10%
+-Zenyatta
+--Base shields increased by 50 (now 50 Health/150 Shield)
+--Primary fire weapon damage decreased from 45 to 40
+--Alternate fire weapon damage increased from 35 to 40
+--Orb of Discord and Orb of Harmony
+---Projectile speed has been increased from 30 to 120
+--Transcendence
+---Movement speed is now doubled upon activation
+---Healing amount increased from 200 to 300 health per second
+-Developer Notes: While Zenyatta has never had the healing abilities of Lúcio or Mercy, he made up for it by dealing more damage. However, his lack of mobility and low health has meant he’s struggled to find a place in many games. To increase his effectiveness, we've made several changes, the biggest of which is an increased shield pool. This will allow him to go head-to-head with more enemies. The Orb of Harmony and Discord changes are also a quality of life change, helping Zenyatta move his orbs around and apply their effects more quickly. And lastly, we’ve increased Transcendence’s healing throughput. This ultimate was designed to be the most effective against sustained, high-damage fire and least effective against short, high-damage bursts (like D.Va’s or Junkrat's ultimates). But, due to the amount of healing it provided, there were times when it was possible for even sustained fire to overcome Transcendence’s output. We’ve made the heal powerful and also allowed Zenyatta to move around more quickly while it’s active. 
+USER INTERFACE UPDATES
+-Game Options
+--Players can now enter numerical values for any option that also has slider (e.g. FoV, volume, sensitivity, etc.)
+--Players can now hide in-game chat by pressing CTRL-SHIFT-C or by typing "/hidechat" into the chat window
+--Controls
+---Mouse sensitivity can now be adjusted out to two decimals
+--Gameplay
+---Mid-match tips can now be toggled on or off (this will enable/disable tips that pop up after a player dies)
+--Social
+---Friend Request toasts can now be toggled on or off
+---Friend notifications can now be toggled on or off
+---Whispers can now be toggled on or off
+--Video
+---Added 21:9 aspect ratio support
+---Players can now enable a real-world clock by toggling the "Display System Clock" setting 
+-Social Features
+--Certain commendations will now appear less frequently during end-of-round voting (e.g. Zenyatta’s Transcendence Healing and Zarya’s Projected Barriers Applied)
+BUG FIXES
+-General
+--The Hero Gallery now remembers the last hero you were looking at and will properly highlight that hero whenever returning to the gallery
+--Fixed a bug that caused the “payload is nearing its final destination” music to continue playing even after the match was over
+--Fixed a bug that caused the UI to disappear whenever the game was forced into windowed mode by an external application
+--Fixed a bug that would sometimes cause visual healing effects to appear on the wrong hero whenever multiple players attempted to pick up a Health Pack
+--Fixed a bug that would sometimes cause different heroes’ victory poses to clip into each other
+--Fixed several lighting issues with the killcam
+-Maps
+--The payload on King’s Row will no longer retreat back inside its starting location if the attacking team fails to push it
+--Adjusted the Hero Select screen volume for the attacking team on Watchpoint: Gibraltar
+--Added Spectator camera collision to most maps
+--Fixed issues with player collision across multiple maps
+--Fixed issues with ambient lighting and shadows across multiple maps
+-Heroes
+--Fixed a bug that caused D.Va to sometimes ignore player collision when summoning her mech
+--Reduced the chance for larger projectiles (i.e. Hanzo's arrows, Zenyatta's orbs) to hit targets around corners
+--Fixed a bug where Mei’s Ice Wall would persist in the game world even after the player switched heroes or left the game
+--Fixed even more bugs that allowed Reaper to Shadow Step to unintended locations
+--Fixed a bug that sometimes caused Reinhardt’s Barrier Field to get stuck in the “on” position if the player used the “Toggle Barrier” setting
+--Fixed a bug that sometimes caused Roadhog to accidentally Chain Hook targets standing behind him
+--Fixed a bug that caused Winston’s Barrier Projector shield to ignore the “Sound Effects Volume” setting
+-Competitive Play
+--Fixed a bug that sometimes caused players not to be able to rejoin games
+[2016/07/21]
+GENERAL UPDATES
+-Competitive Play
+--Attacking teams now have 4 minutes to capture the first point on Assault maps (down from 5 minutes)
+
+-Miscellaneous
+--The "You Are Not Prepared" spray and player icon is now available for all players
+BUG FIXES
+-Heroes
+--The correct hit pip sound will now play whenever one of Ana's darts impact with a barrier
+--All of Ana's in-game sounds now have proper occlusion   
+
+-User Interface
+--Fixed a bug that caused "Attack" and "Defend" indicators to not always display on the hero select screen
+--Fixed a bug that caused the scoreboard (default: Tab) to sometimes display the wrong stats if you switched heroes mid-match
+--Fixed a bug in Competitive Play that caused the numbers on the post-match skill rating bar to not increment correctly 
+[2016/07/26]
+HERO BALANCE UPDATES
+-Ana
+--Biotic Rifle
+---Rate of fire increased by 20%
+---Magazine size increased from 8 to 10
+-Developer Comments: While Ana has been very well received, she was showing to be a little bit weaker overall. In addition to helping her feel better to play, these changes should also increase her healing and damage output.
+-McCree
+--Peacemaker
+---Primary Fire
+----Damage falloff range decreased by 10 meters
+-----Damage falloff amount is unchanged
+-----As a result, even with this change, McCree’s effective range is still higher than it was at launch
+---Alternate Fire
+----Rate of fire increased by 15%
+---Flashbang
+----Recovery time (i.e. the amount of time before McCree can fire again) decreased from 0.5 seconds to 0.35 seconds
+-Developer Comments: McCree’s latest range increase helped him quite a bit, but it was a bit too much in the right hands. This change weakens his long range damage somewhat, but still keeps it stronger than it has been in the recent past. The other changes combine to allow him to land more alternate fire shots on targets that he has hit with Flashbang.
+BUG FIXES
+-Heroes
+--Targets of Ana’s Sleep Dart will no longer instantly recover when damaged (recovery time is now 0.5 seconds)
+-User Interface
+--Fixed UI compatibility issues for ATI cards
+--Fixed a bug that would sometimes cause Lúcio, Mei, and other models to only partially render (or disappear)
+[2016/08/02]
+PATCH HIGHLIGHTS
+-New Seasonal Event: Summer Games
+-Crack your knuckles, stretch those hamstrings, and turn up the volume—the Overwatch Summer Games have begun! For the next three weeks, we’re celebrating the spirit of competition in style. Earn special Summer Games Loot Boxes, collect over 100 seasonal items, and challenge your friends to a futuristic soccermatch in our new brawl: Lúcioball!
+-To learn more about the Summer Games, click here.
+GENERAL UPDATES
+-Competitive Play
+--Players who leave a competitive match before its conclusion will now have to wait for at least 10 minutes before joining another competitive match
+--During subsequent rounds on Assault maps (Hanamura, Temple of Anubis, and Volskaya Industries), the amount of time provided for team assembly has been reduced
+-Miscellaneous
+--Added Lúcio as an AI hero in Practice vs. AI, Play vs. AI, and Custom Game modes
+--Several minor, behind-the-scenes improvements have been made to the in-game matchmaker
+MAP BALANCE UPDATES
+-Watchpoint: Gibraltar
+--Made several minor adjustments across the map to ensure better balance for defending and attacking teams
+USER INTERFACE UPDATES
+-General
+--Made several minor improvements to the way hero selection tips work:
+---The "No Builder" and "No Sniper Hero" warnings have been removed
+---"No Support Hero" now reads as "No Healer" (does not apply to Symmetra)
+---Hero selection tips are no longer displayed during team assembly in a Brawl
+--Zenyatta's Transcendence speed increase is now noted on the Hero Details screen
+--Players can now select which type of Loot Box (standard or seasonal) they'd like to open next
+--Players can now set an FPS cap by selecting "Custom" from the “Limit FPS” dropdown
+
+BUG FIXES
+-General
+--Fixed a bug where Widowmaker’s “Noire” skin and the Origins Edition skins would not count towards unlock progress of the “Decked Out” Achievement
+--Fixed a bug where “The Path Is Closed” Achievement could not be obtained by D.Va while in her mech
+--Fixed a bug where players were unable to use the “Join Game” option from the social menu on their friends
+--Fixed a bug that caused Custom Games to ignore the “Return to Lobby” setting when the game mode was set to Competitive
+--Fixed a bug that sometimes caused the Tutorial to become unplayable after players switched heroes
+--Fixed a display bug with the mouse cursor for Windows systems using a 16-bit desktop
+--Removed developer option to disable all shadows via the settings file
+
+-Maps
+--Fixed a bug causing the “old timey” end-of-round music filter on Hollywood to remain active after leaving a match
+--Fixed a bug that kept the 30-seconds-remaining music from activating correctly on Payload maps.
+
+-Heroes
+--Fixed a bug that was affecting the majority of Ana’s “Most in Game” career statistics
+--Fixed a bug that caused Ana’s Biotic Grenade to miss an allied Reaper while in Wraith Form
+--Fixed a bug with that caused Junkrat’s “Jester” and “Fool” skins to incorrectly display during a Highlight Intro
+--Fixed a bug that kept Soldier: 76’s Ultimate charge meter from displaying progress gained for the Tactical Visor ability in the Tutorial
+--Fixed a bug that caused the visuals and sound effects on Reinhardt’s Rocket Hammer to malfunction when hitting an enemy
+--Fixed a bug that caused Widowmaker’s “Widow’s Kiss” spray to be replaced by the “Je Te Vois” spray
+-Competitive Play
+--Fixed a bug that kept grouped players from being able to rejoin a match when disconnected
+--Fixed a bug that caused a player’s Skill Rating to be displayed incorrectly when rejoining a match in progress
+-A.I.
+--Fixed an issue hindering Ana from restoring allies to full health
+--Fixed an issue allowing Reaper to use Wraith Form to escape in situations where he should be stunned
+[2016/08/09]
+MAP BALANCE UPDATES
+-Respawn time for defenders has been standardized to 10 seconds on all maps
+-Payload speed has been slightly reduced on Watchpoint: Gibraltar
+
+BUG FIXES
+-General
+--Fixed a bug causing incomplete character models to load on the Hero Selection screen
+--Fixed a number of bugs causing various crashes and instability issues
+-Competitive Play
+--Fixed a bug that prevented user interface elements from displaying in some languages
+--Fixed a bug that caused the placement matches screen to display when some players would disconnect and rejoin a match
+-Maps
+--Estádio das Rãs
+---Fixed a bug that allowed players to spawn as heroes other than Lúcio
+--Nepal
+---Fixed an issue which allowed players to get stuck outside the normal boundaries of the map
+--Temple of Anubis
+---Fixed a bug causing a portion of the city wall to display incorrectly on all graphics settings
+
+[2016/08/16]
+BUG FIXES
+-Fixed a bug that was blocking spectator cameras from passing through some doors and force fields
+[2016/09/01]
+PATCH HIGHLIGHTS
+-Competitive Play Season 2
+-We've made some big changes to Competitive Play in Season 2. The most noticeable change is the introduction of skill tiers, which we hope will better communicate players' relative skill levels. Competitive Play will put a greater emphasis on skill tiers over specific ratings, and as such, a player's tier will be more prominently displayed throughout the game. We've also switched the skill rating system to a 1-5000 scale to give players more detailed information about how each match affects their specific rating.
+-Sudden Death is also going away in Season 2. Instead, matches that are tied when the clock runs out end in a draw—though, it should be a rare occurrence. Because of this, we've made some changes to our game modes in Competitive Play to help reduce the chance that a draw can happen.
+-We've also made a few minor adjustments to leaver penalties, the Top 500 system, and the competitive point system. Read on below to learn more!
+-New Assault/Escort Map: Eichenwalde
+-The forest has slowly begun overtaking the abandoned village of Eichenwalde, but the scars will never completely fade. During the Omnic Crisis, Eichenwalde was the site of a key battle. General Balderich von Adler took a handful of crusaders to the village in an effort to outflank the omnic army. Balderich's soldiers were able to break down the enemy forces, giving the German military an opportunity to push back, but the Crusaders didn't make it out of the battle. General Balderich finally collapsed in the castle's great hall.
+
+GENERAL UPDATES
+-General
+--When activating the "Ultimate Status" communication, Symmetra now reports the number of charges left on her teleporter
+--When activating the "Needs healing" communication while targeting a teammate, Ana, Lúcio, Mercy, and Zenyatta will now tell allies to group up to receive healing. A marker will also appear above the player's head, allowing teammates to locate the healer more quickly
+--Added Torbjörn as an AI-controlled hero in Practice vs. AI, Play vs. AI, and Custom Game modes
+--Sit and laugh emotes are now unlockable for all heroes
+--New Legendary skins have been added for Reinhardt
+
+-Competitive Play
+--Skill rating is now measured on a 1-5000 scale instead of the former 1-100 scale
+--Skill Rating Tiers
+---Players will now be assigned to a tier, depending on their skill rating
+----Bronze - 1-1499
+----Silver - 1500-1999
+----Gold - 2000-2499
+----Platinum - 2500-2999
+----Diamond - 3000-3499
+----Master - 3500-3999
+----Grandmaster - 4000-5000
+---In Bronze, Silver, Gold, Platinum, and Diamond tiers, a player will not drop out of their tier even if their skill rating falls below the cutoff
+---In Master and Grandmaster tiers, a player whose skill rating falls below the tier's minimum will be moved to a lower tier
+---Players that have reached the Master and Grandmaster tiers must be within 500 Skill Rating of their groupmates
+---Players that are Diamond-tier and below must be within 1000 Skill Rating of their groupmates
+--Skill Rating Decay
+---Players in Diamond, Master, and Grandmaster tiers that haven't participated in a competitive match for 7 days will lose skill rating
+---Players with a skill rating above 3000 (Diamond tier or higher) will lose 50 rating points every 24 hours, but their rating will not fall below 3000
+---Competing in a single match will halt skill rating decay
+---Players that haven't participated in a competitive match for 7 days will immediately drop out of the top 500
+--Map Changes
+---Several refinements have been made to the time bank system for Hanamura, Temple of Anubis, and Volskaya Industries
+---The time bank system has been added to Dorado, Hollywood, King's Row, Numbani, Route 66, and Watchpoint: Gibraltar
+---Time granted for taking objectives on Dorado, Hanamura, Hollywood, King's Row, Numbani, Route 66, Temple of Anubis, Volskaya Industries, and Watchpoint: Gibraltar has been reduced from 5 minutes to 4
+--Competitive Points
+---Existing competitive points saved from Season 1 will be multiplied by 10
+---After winning a competitive match, players will now receive 10 competitive points (instead of 1)
+---Players will now receive 3 competitive points for a draw
+---The cost of golden weapons has also been multiplied by 10 - from 300 to 3000
+---A soft cap is being placed on the number of competitive points that can be saved
+----Players with more than 6000 points at the start of season 2 will no longer accrue points by playing competitive matches
+----End-of-season rewards will still be granted to players at the soft cap
+--Instead of going into sudden death, tied competitive matches will now result in a draw
+--Players must now win at least 50 competitive matches to be eligible for a spot in the Top 500
+--Players must now complete more matches to clear their penalty status for leaving a competitive match early 
+
+HERO BALANCE UPDATES
+-General
+--Ultimates that consume the ultimate meter when activated will now drain the meter more quickly (.25 second instead of 1 second)
+--Reverted a recent change that reduced the size of heroes' projectiles
+--Most hero abilities will no longer interrupt quick melee attacks
+--Ultimate abilities will now interrupt quick melee attacks
+-Developer Comments: Altering the size of projectiles in flight had too many unintended side effects to keep in the game, at least in its current form. We will continue watching this and make additional changes if necessary. We’re also making quick melee more consistent when interacting with enemy abilities.
+-D.Va
+--Defense Matrix
+---After being activated, Defense Matrix will begin regenerating following a 1-second delay (formerly .5 seconds)
+-Developer Comments: Defense Matrix was too efficient when tapped repeatedly, instead of being held. Now, the recovery delay matches the ability cooldown.
+-Hanzo
+--Hanzo will now experience a 30% decrease in speed while aiming (formerly 40%)
+--Maximum projectile speed has been increased by 30%
+--Arrow size has been reduced by 33%
+-Developer Comments: Hanzo has the potential to deal a lot of damage, but he can feel really inconsistent, even at a medium distance. By increasing the projectile speed, we’re extending his reliable range, making it easier to land shots without having to perfectly predict enemy movement. To compensate for the increased projectile speed, we’ve decreased the size of his arrows, meaning his shots now require a bit more accuracy.  
+-Mei
+--Blizzard
+---Projectile now pierces barriers
+---Radius has been increased from 8 meters to 10 meters
+-Developer Comments: Mei has an interesting toolkit, but her ultimate often felt like it was too difficult to use effectively. Consequently, it felt weak compared to many other ultimate abilities. The freeze effect has been piercing barriers for some time now, but the projectile would still be blocked. Now, you can throw it down exactly where you want it, so it’s much easier to utilize the full radius effectively.
+-McCree
+--Deadeye
+---Now drains over a .25-second period (instead of displaying a 50% reduction on the ultimate meter when activated and 0% when confirmed)
+-Developer Comments: If players managed to counter or avoid McCree's ultimate, it would often regenerate very quickly since only half of the ultimate charge was spent. Now, this ultimate works like every other ultimate that has a duration.
+-Mercy
+--Caduceus Staff
+---Healing Beam
+---Healing-per-second has been increased by 20%
+--Resurrect
+---Resurrected allies will be able to maneuver after 2.25 seconds (reduced from 3 seconds)
+-Developer Comments: Resurrection now allows teammates to jump back into the fight more quickly, which should help Mercy survive after activating her ultimate. Mercy's healing is also getting a boost to solidify her role as a strong, single-target healer.
+-Genji
+--Double jump no longer resets when wall climbing
+--Swift Strike
+---No longer deals damage to traps like Widowmaker's Venom Mine or Junkrat's Steel Trap
+---No longer bypasses Junkrat's Steel Trap
+---No longer interrupts quick melee attacks
+--Dragonblade
+---Duration of Genji's ultimate has been reduced from 8 seconds to 6 seconds
+-Developer Comments: Genji was a little too difficult to pin down, and these changes will balance his speed. Swift Strike no longer cancels the recovery time from a quick melee attack, so players will no longer be able to get a free melee attack before using Swift Strike. Lastly, Dragonblade's duration was long enough that it often felt too difficult to reasonably counter.
+-Lúcio
+--Amp It Up
+---The boosting of movement speed has been decreased by 30% (from a 100% increase to a 70% increase)
+-Developer Comments: Thanks to Lúcio's speed increase, he was almost a must pick in every lineup.
+-Roadhog
+--Chain Hook
+---If the hooked target isn't in Roadhog's line of sight when retracting the hook, they will be moved back to the position where they were originally hooked
+-Developer Comments: This change means that hooked targets will be less likely to slide along walls, potentially ending up in an odd place after they've been reeled in.
+-Soldier: 76
+--Heavy Pulse Rifle
+---Bullet spread now happens more quickly when unloading fully-automatic pulse fire
+---Significantly Increased bullet spread recovery time
+-Developer Comments: These changes will make burst-firing feel more reliable and increase his effectiveness at longer ranges.
+-Zenyatta
+--Orb of Discord
+---The amount of damage amplified by a target with Orb of Discord has been decreased from 50% to 30%
+--Orb of Destruction
+---Damage has been increased from 40 to 46
+-Developer Comments: Zenyatta is in a far better place since the last update, but the strength of Orb of Discord has turned him into an almost mandatory pick. These changes reduce Orb of Discord's effectiveness, but his damage-dealing potential has been increased. The amount of damage that he delivers should feel largely unaffected by the change.
+
+MAP BALANCE UPDATES
+-Watchpoint: Gibraltar
+--Watchpoint: Gibraltar’s first checkpoint has been removed
+-Developer Comments: The balance changes that were implemented in previous patches have eliminated the need for Watchpoint: Gibraltar to have an extra checkpoint.
+
+USER INTERFACE UPDATES
+-General
+--A new "Allied Health Bars" option has been added (Options > Controls)
+--Contextual menus have been added on the hero selection screen, giving players the ability to report or group up with other players
+--Matchmaking UI is now purple in the Competitive Play queue
+--Made several minor adjustments to typography in the Spectator UI
+
+BUG FIXES
+-General
+--Fixed a bug that allowed the kill participation metric to go above 100 percent
+--Fixed a bug in the Custom Game settings preventing the Ability Cooldown modifier from affecting Ana
+--Fixed a bug causing players to incorrectly see gains in experience points when completing Custom Games
+--Fixed a bug that caused heroes to die when first spawned in a custom game if Health and Damage modifiers were used simultaneously
+-AI
+--Fixed a bug that could cause AI Bastion to become stuck, continuously healing himself in the spawn area
+--Fixed a bug preventing Torbjörn from placing his turret in viable locations
+
+-Heroes
+--Appropriate sound effects now play when Ana shoots barriers, shields, and armor
+--Ana’s scope now correctly displays all custom reticle options
+--D.Va no longer communicates her ultimate status for Self-Destruct while charging her Call Mech ultimate
+--D.Va’s Boosters are no longer auto-cancelled if activated while her primary fire is active
+--D.Va’s ultimate charge status is no longer reset to 0% if she falls to her death while piloting a mech
+--Hanzo's “Spirit Dragon” unlockable voice line now correctly plays when using his Okami and Lone Wolf skins
+--Fixed various issues with Junkrat's emote and highlight animations
+--Fixed a bug that kept Junkrat’s ammo from being refilled when he was resurrected
+--Fixed an issue causing Mei's Ice Wall to push herself to the side when cast at her feet
+--Fixed a bug preventing Mei's Ice Wall from being destroyed by a moving payload
+--Fixed a bug that prevented Mei's Ice Wall from appearing at the target location when cast
+--Fixed a bug allowing Reaper to reach unintended map locations using Shadow Step
+--Fixed a bug causing Reinhardt's shield to jitter when turning in third person
+--Fixed an issue that prevented Roadhog's chain from displaying correctly in some situations
+--Fixed a bug causing Roadhog’s chain to become permanently extended if his target disconnected from the match
+--Fixed several issues with Symmetra's emotes and highlight intros
+--The scarf on Tracer's Slipstream skin is no longer stiff in the Hurdle highlight intro
+--Fixed a bug preventing overtime from being triggered while Zenyatta is using Transcendence
+--The names of Tracer's Sprinter and Track and Field skins now display correctly
+--Ana’s attacks and abilities now activate the controller’s rumble function
+--The alternate fire on McCree’s Peacekeeper ability now activates the controller’s rumble function for all six shots
+-Maps
+--Fixed an issue preventing Genji and Hanzo from reliably climbing a specific crate on Watchpoint: Gibraltar
+--Fixed several issues that allowed Reaper to reach unintended locations on Watchpoint: Gibraltar
+-User Interface
+--Competitive play leaver messaging no longer overlaps with the PvP HUD at the top of the screen
+--Fixed a bug causing the end of season banner to pop up while the player is in a match
+--Fixed a bug preventing the hero list in Custom Game settings from being organized alphabetically
+--The spectate option now becomes unavailable (the button will be greyed out) when all spectator slots have been filled in a Custom Game lobby
+--Fixed an issue causing in-game statistics to run off the edge of the screen in 16:10 aspect ratio
+[2016/10/11]
+PATCH HIGHLIGHTS
+-New Seasonal Event: Overwatch Halloween Terror
+-When the shadows grow long and the nights grow cold . . . when witches cackle in the night, and ghosts roam the streets . . . it can mean only one thing: Halloween has arrived in Overwatch! Starting today, Overwatch's regular Loot Boxes have been replaced with limited-edition Halloween Loot Boxes. Each contains at least one of more than 100 Halloween-themed sprays, icons, skins, victory poses, emotes, and highlight intros. And the bravest heroes will test their mettle against a mad scientist's metal minions in Overwatch's first co-op PvE brawl: Junkenstein’s Revenge.
+-Welcome to Overwatch Halloween Terror!
+-To learn more about the event, click here.
+-New Feature: Leaderboards
+-In-game leaderboards will now show off the top 500 competitive players from each region, and a separate leaderboard will allow players to see how their competitive performance stacks up against their Battle.net friends. Plus, we’re adding leaderboards for the Overwatch Halloween Terror event that’s happening right now!
+-Note: After downloading the latest patch, players will need to complete at least one Competitive Play match before they’ll appear on the Battle.net friend leaderboards.
+GENERAL UPDATES
+-General
+--Static cameras are now supported in spectator mode
+--Team names can now be edited in custom games
+--Raised the volume of Hanzo's Dragonstrike voice line while wearing the Okami/Lone Wolf Skin
+--Heroes hit by Ana's Nano Boost have a new voice line that informs other players
+--Increased frequency of Reinhardt's "barrier failing" voice line
+--Custom Games can now be paused
+-Competitive Play
+--Players who leave or are disconnected from a competitive match can now rejoin anytime while the match is still in progress
+--Teammates of a disconnected player can now exit a match after 2 minutes have elapsed (formerly 1 minute), and they will not receive a leaver penalty. However, they will receive a loss
+-Spectating
+--Camera movement in Spectator Mode has been improved
+HERO BALANCE UPDATES
+-Ana
+--Nano Boost
+---Ultimate cost has been increased by 20%
+--Biotic Grenade
+---Radius has been increased from 3 to 4 meters
+-Developer Comments: So far, we haven't seen any indication that Ana is too strong overall, but her ultimate charges a little too fast, especially considering the impact it can have on a match. Also, her Biotic Grenades are getting a small boost to help her hit multiple targets.
+-Widowmaker
+--Widow's Kiss
+---Scoping-in animation time has been reduced from 0.5 to 0.33 seconds
+-Developer Comments: This change will help Widowmaker acquire new targets more quickly and speed up her reaction time in fast-paced situations.
+-Junkrat
+--RIP-Tire
+---Ability now activates more quickly
+-Developer Comments: Junkrat can be an extremely effective hero in the right hands, but RIP-Tire often felt underpowered when compared to his counterparts.
+USER INTERFACE UPDATES
+-General
+--Hero Gallery now signify which items were unlocked during the Overwatch Halloween Terror event
+--Several minor aesthetic changes have been made to the game’s Main, Social, and Options menus
+--Removed several stats that were duplicated for certain heroes throughout the career profile
+--Graphics, typography, and layout have been updated in the Player Profile menu
+--Controller users can now choose between two aiming modes
+---Dual-Zone mode (New default): The vast majority of the thumbstick's range moves with reduced sensitivity and relatively high acceleration. However, when the thumbstick crosses to the outer 10% of its range, it will move with high sensitivity and relatively low acceleration. This mode will allow for more precise aiming, while still allowing players to turn around quickly
+---Exponential Ramp mode (Old default): As the thumbstick moves toward the outside of its range, the sensitivity is ramped up exponentially. The acceleration remains relatively high throughout
+-Social Features
+--Certain commendations will now appear less frequently during end-of-round voting, and others will appear more frequently (e.g. Torbjörn's Armor Packs Created will appear less frequently while Offensive Assists will appear more frequently)
+BUG FIXES
+-General
+--Enemy players that are knocked down no longer lose their red outline
+--Highlight Intros previewed after opening a loot box now loop
+--Fixed a bug that prevented custom key bindings from saving after relaunching the game
+--Fixed a bug that kept players from binding Take Screenshot to other keys
+--Fixed a bug preventing any non-default sprays from appearing during the Play of the Game
+--Heroes that appeared on the main menu screen are no longer visible in the background while viewing items in the hero gallery
+-Competitive Play
+--[PS4, XB1] Fixed an issue that was incorrectly displaying a top 500 icon for certain players, even though they had not yet broken into the top 500
+-Maps
+--Fixed a bug that allowed D.Va to reach unintended locations on several maps when using Self-Destruct
+--Fixed a bug that allowed players to capture first objective on King’s Row from extremely high above the point
+--Fixed a bug that allowed the payload to heal players, even when they were negatively affected by Ana’s Biotic Grenade
+--Fixed a bug preventing the health bars on the Practice Range bots from displaying the effects of Ana’s Biotic Grenade
+--Fixed a bug preventing sprays from being applied correctly to some surfaces on Eichenwalde
+--Fixed a lighting issue, causing certain objects to appear darker than intended inside the Eichenwalde castle
+-Heroes
+--Smoothed the animation during Ana’s zoom-release transition
+--Fixed a bug causing Bastion’s bullet shells to eject backwards while in Configuration: Sentry mode
+--Fixed a bug causing D.Va to be teleported back to a re-spawn point if her Boosters are used inside the team’s dropship
+--Fixed an issue preventing Hanzo’s Sonic Arrow from appearing when selected
+--Fixed a bug preventing Junkrat’s statistics from correctly tracking RIP-Tire kills
+--Fixed a bug that prevented Junkrat’s “Roadkill” achievement from being awarded after obtaining 4 kills with RIP-Tire
+--Fixed an issue preventing Mercy’s staff from appearing in some highlight intros while wearing the Valkyrie, Sigrún, and Cobalt skins
+--Fixed a bug causing Tracer’s highlight intros to render at a lower resolution when accessed from the Highlights menu
+--Fixed a bug that allowed Widowmaker to use her Grappling Hook on basketballs
+--Symmetra's “Car Wash” achievement now correctly lists the number of beams required (6 instead of 7)
+--Fixed a time calculation issue that was causing Zenyatta's “Rapid Discord” achievement to be more difficult than intended
+-Spectating
+--Spectators are now able to see the Assemble Heroes countdown timer on all maps during a Custom Game
+--You are no longer able to see your killer’s red outline while spectating your team before respawning
+[2016/10/19]
+BUG FIXES
+-General
+--Fixed an issue causing the default Overwatch spray to override a player’s chosen spray when watching a Play of the Game or Highlight
+--Fixed an issue causing players to frequently disconnect while viewing Highlights
+--Fixed a bug preventing the appropriate music from playing after a loss on the Junkenstein's Revenge Brawl
+-Gameplay
+--Fixed a bug causing multiple issues when displaying data on the leaderboards
+-Heroes
+--Fixed an issue preventing Ana’s Nano Boost callouts from being heard by the enemy team
+--Fixed a bug preventing players from receiving credit toward the Healing Done commendation when healing D.Va’s mech
+--Fixed a graphical issue that was preventing the liquid in Mei’s Endothermic Blaster from appearing
+--Fixed a bug causing Reinhardt’s Charge to unexpectedly stop when crossing certain thresholds (e.g. when exiting a dropship)
+--Increased the volume of Roadhog’s “Want some candy” voice line
+-Map
+--Fixed a bug on Eichenwalde that caused some textures to stretch across the map for some players
+[2016/11/15]
+PATCH FEATURES
+-New Hero: Sombra (Offense)
+-One of the world's most notorious hackers is stepping out of the shadows: Sombra, a mysterious infiltrator who uses information to control those in power.
+-Sombra is a master manipulator who can hack her enemies, temporarily blocking their abilities. In addition, she can hack health packs and Torbjorn's turret, making them useless to her opponents. She uses her fully automatic Machine Pistol to take out her enemies, getting into position using her Thermoptic Camo, which allows her to become invisible and move more quickly for short periods of time. This gives her the ability to slip past enemy defenses undetected, but she's instantly revealed if she takes damage or attacks an enemy. She also has a Translocator, which can be tossed like a grenade. When it’s activated, Sombra is teleported to its location (even while it’s in flight).
+-Sombra's ultimate ability, EMP, discharges electromagnetic energy in a wide radius, hacking anyone caught within range and destroying enemy barriers and shields. To learn more about Sombra, click here.
+-New Feature: The Arcade!
+-Discover brand new ways to play Overwatch in the Arcade. Choose from a variety of regularly rotating game modes, maps, and rulesets that don't quite fit into Quick Play or Competitive Play. Whether it's 1-on-1 duels, 3-vs-3 skirmishes, our alternating selection of brawls, or special rulesets like “no hero switching,” you should have no problem finding a game that fits your mood. Experience is earned just like any other mode, but you can also earn Arcade-specific rewards, like Loot Boxes!
+-New Arena Map: Ecopoint: Antarctica
+-Bundle up for a journey to Ecopoint: Antarctica, the former Overwatch installation where climatologist Mei-Ling Zhou was once stationed. While researching severe weather anomalies in the region, the station was hit by an intense polar storm. Running out of options and low on supplies, the team decided to cryogenically freeze themselves until the storm passed. They believed that it would only be for a few months, but Mei awoke nearly a decade later.
+-Ecopoint: Antarctica is a compact new Arena map that features multiple new game modes, including a 3-vs-3 battle and 1-on-1 duel. Check it out in the Arcade.
+-Season 3 of Competitive Play
+-Competitive Play's second season will end on November 23 at 4PM PDT (November 24 at 0:00 UTC), and the third season will begin on November 30 at 4PM PDT (December 1 at 0:00 UTC). During the week-long off season, you'll still be able to queue for matches using the Competitive Play ruleset, but your skill rating will not be affected and no Competitive Points will be awarded.
+-We've also made a few adjustments to the skill rating system for season 3. Players will be distributed more broadly across the skill tiers, which means that your season 3 rating will probably be lower than the previous season.
+-Developer Comments: When season 2 started, we had more players in the Gold and Platinum skill tiers than we originally intended. This meant that skill levels varied widely for players within those tiers, and some players were achieving inappropriately high rankings during their placement matches. These players typically began the season by having their skill rating adjusted downwards after their first few matches. For season 3, skill ratings will be slightly lower after your placement matches, allowing them to increase as the season begins. After you play enough matches, your skill rating changes will return to normal.
+GENERAL UPDATES
+-General
+--Made a number of data format improvements, which should decrease load times and reduce the game’s storage space requirements
+--Made several adjustments to the amount of experience needed to level:
+---The amount of experience needed to reach levels 2 through 13 remains unchanged
+---The amount of experience needed to reach levels 14 through 100 has been slightly reduced
+---The amount of experience needed to reach levels after 100 is now constant (20,000 XP) and will no longer reset after each promotion
+-Developer Comments: With the way our experience curve works right now, players move fairly quickly through the first 23 levels of each tier (1-23, 101-123, 201-223, etc.). This is because when a player is promoted after 100 levels, the experience curve resets. While this reset has worked pretty well so far, it’s also encouraged some people to stop playing the game after they’re promoted—hoping to save those first 23 levels for a seasonal event. To help address this, the experience needed for all post-promotion levels (any level after 100) is now consistently 20,000 and will no longer reset. The total experience required to gain 100 levels after a promotion is roughly unchanged, but the total experience required to earn the first 100 levels (before the first promotion) has been slightly reduced.
+--Quick Play matches are now restricted to one of each hero per team
+-Developer Comments: We’ve been monitoring your feedback to the 1-hero limit in Competitive Play. Overall, we believe the game is in a better place in terms of balance and stability with the hero limit in place. For this reason, we have decided to add the 1-hero limit to Quick Play. We understand that there are a lot of players who enjoy the ability to play multiples of the same hero, so we have introduced a new mode to the Arcade called “No Limits.” This mode uses Quick Play’s original ruleset, which allows for hero stacking.
+-Spectating
+--The number of observer slots in Custom Games has been increased from 6 to 12
+HERO BALANCE CHANGES
+-General
+--Dealing damage to things other than players (like Torbjorn's turret or Symmetra's teleporter) no longer charges ultimate abilities
+--Ultimate costs have been increased by 25% for all heroes
+-Developer Comments: Game-changing ultimate abilities were coming up a bit too frequently. This change helps keep them in check while still allowing them to be powerful.
+-Ana
+--Nano Boost
+---No longer increases move speed
+-Developer Comments: The increased speed from Ana’s Nano Boost made the ability feel unstoppable and forced Ana players to select targets that could really take advantage of the speed boost. Removing the speed boost means that Ana has a reason to apply Nano Boost to a larger variety of heroes, and enemies can fend off the attack more easily
+-D.Va
+--Call Mech
+---Ultimate cost has been decreased by 20%
+--Mech health increased to 200 (formerly 100). Armor remains at 400
+--Movement speed while firing has been increased by 25%
+-Developer Comments: We reduced the cost of the Call Mech ultimate ability to compensate for the increased ultimate cost across all heroes (detailed above). D.Va players shouldn’t experience a noticeable change. The rest of these changes help D.Va’s withstand attacks, which will allow her to keep pressuring enemies.
+-Lúcio
+--Amp It Up
+---Healing per second has been decreased by 10%
+-Developer Comments: Lucio’s overall healing output has always been on par with (or even higher) than Overwatch’s other healers, and his other benefits made him an almost mandatory pick.
+-Mei
+--Blizzard
+---Ultimate cost has been increased by 15%
+-Developer Comments: Mei’s ultimate was recently given a much larger radius. Now it’s coming up too frequently, considering the impact it can have.
+-Mercy
+--Passive health regeneration now activates when Mercy avoids taking damage for 1 second (formerly 3 seconds)
+-Developer Comments:  This change allows Mercy to survive more easily by evading enemy fire. 
+-Pharah
+--Rocket Launcher
+---Minimum explosion damage has been increased by 13%
+---Minimum explosion knockback has been decreased to 0%
+--Jump Jets
+---Lift increased by 35%
+-Developer Comments: These changes will make the explosions from Pharah's Rocket Launcher more deadly, so hitting multiple targets should feel better. Her Jump Jets are also getting a boost to increase maneuverability while hovering.
+-Soldier: 76
+--Pulse Rifle
+---Bullet damage increased from 17 to 20
+---Maximum bullet spread increased from 2.2 to 2.4
+-Developer Comments: Soldier: 76's damage felt a little low when compared to similar heroes. This increase affects both his normal fire and his ultimate.
+-Torbjörn
+--Scrap is now automatically generated over time
+--The amount of scrap collected from a fallen enemy has been decreased by 40%
+--Forge Hammer
+---Swing speed increased by 25%
+---Damage decreased by 27%
+-Developer Comments: Armor Packs have always been a powerful tool in Torbjörn's arsenal, but it was often difficult to gather enough scrap to give your team a legitimate boost when they needed it. Conversely, if a team held on long enough, the scrap collected from fallen enemies was often able to generate so many armor packs that enemy teams had a difficult time turning the tide. Automatically generating scrap over time helps smooth out these differences and makes Torbjörn more viable. His hammer swing speed was increased to help him construct level 2 turrets more quickly.
+-Widowmaker
+--Venom Mine
+---Explosion no longer damages the player who placed the mine
+--Widow's Kiss
+---Charge rate increased by 20%
+-Developer Comments: These changes allow Widowmaker to be more flexible and reactive.
+-Zarya
+--Particle Barrier
+---Power gained from barriers decreased by 20%
+--ProjectedBarrier
+---Power gained from barriers decreased by 20%
+-Developer Comments: Considering her potential damage output, Zarya was starting to feel like a mandatory pick in most situations. Rather than reduce her damage output, this change makes achieving her maximum power and damage output slightly more difficult. 
+USER INTERFACE UPDATES
+-General
+--Loading screen now displays the name of the chosen game mode when playing in the Arcade
+BUG FIXES
+-General
+--Fixed an issue that sometimes prevented the PC client from closing properly, making the Battle.net application think the game was still running
+--Fixed a bug preventing players from receiving credit toward the Most Healing Done commendation
+--Fixed a bug that caused the columns on Recent Players to slightly overlap each other
+--Fixed a bug preventing the fourth column on the friends list from being displayed properly
+--Fixed a navigation error that could occur when attempting to adjust video options using a controller
+--Players will now be removed from the Practice Range if they are AFK
+-AI
+--Fixed a bug that caused McCree bots to Combat Roll into the well on Ilios
+--Fixed a bug that could cause bots to get stuck in a wall near objective B on Temple of Anubis
+--Fixed a bug that prevented bots from moving through certain locations on Volskaya Industries
+-Competitive Play
+--Fixed a bug that could cause overtime to continue indefinitely on Assault maps
+--Fixed a bug that could cause matches to begin with only 11 connected players
+-Heroes
+--Fixed a bug that prevented Ana's healing stats from showing up in the Career Profile page
+--Fixed a bug that prevented Ana's custom crosshairs from displaying while zoomed
+--Fixed a bug causing irregular placement of the pumpkin on Genji's "Pumpkin Carving" highlight intro with certain skins
+--Fixed a bug preventing Mercy's staff from showing up in the "Guardian Angel" highlight intro with her Cobalt skin equipped
+--Fixed a bug preventing Reaper's "R.I.P." victory pose from animating correctly when the game client isn't in focus
+--Fixed a bug that allowed Tracer to use Blink while rewinding with Recall
+--Fixed a bug preventing some of Tracer's voice lines from activating with her Punk skin equipped
+--Fixed a bug preventing Zarya from gripping her gun's handle in the "Deadlift" highlight Intro
+--Fixed a bug causing Zarya's Graviton Surge to eject Reinhardt at high velocity
+-Maps
+--Fixed a typo on the bakery blackboard in Eichenwalde
+--Fixed a bug that allowed certain heroes to stand on unintended pillars on Ilios
+--Fixed a bug on Lijiang Tower that allowed heroes to reach unintended locations
+--Fixed a bug allowing Reaper to Shadow Step to unintended locations on Nepal
+--Fixed a bug that allowed players to contest the payload from a protected area above the gas station on Route 66
+--Fixed a bug that allowed Pharah to reach unintended locations on Volskaya Industries
+--Fixed a bug on Watchpoint: Gibraltar that allowed players to reach an unintended location near the final objective
+-Spectating
+--Fixed a bug that occasionally produced incorrectly colored health bars when spectating Custom Games
+[2016/11/30]
+BUG FIXES
+-Arcade
+--Fixed a bug that prevented Ana from being selected in 1v1 matches
+-Heroes
+--Fixed a bug that allowed Mercy to receive Ultimate charge when using her Cadueus Staff to increase teammates’ damage when they’re not damaging enemies
+--Fixed a bug preventing Reinhardt from deactivating his Barrier Field after being hacked by Sombra
+--Fixed a bug preventing Sombra’s Hack from cancelling Soldier: 76’s Sprint ability
+--Sombra no longer receives credit toward her on-fire meter when her EMP ultimate hits Symmetra’s turrets
+--When multiple Sombras attempt to hack a health pack, the player that initialized the hack first will now control it
+--Fixed a bug preventing Sombra from seeing practice bots, whose health has fallen below 50%, through the walls on the Practice Range
+--Fixed a bug preventing Sombra’s reticle from consistently expanding while firing her machine pistol
+[2016/12/13]
+PATCH HIGHLIGHTS:
+-New Seasonal Event: Winter Wonderland
+-Overwatch is getting into the holiday spirit with a brand new seasonal event. For the next three weeks, Hanamura and King's Row will be decked out in holiday lights, we're introducing a new collection of holiday-themed cosmetic items, you can challenge your friends to a snowball fight, and our Loot Boxes will be and tied with festive bows.
+-Grab a mug of hot cocoa and jingle all the way to Overwatch's Winter Wonderland.
+-To learn more, click here.
+GENERAL UPDATES
+-General
+--Added a new "Boop" unlockable voice line for Sombra
+--Players can now select the 1v1 Mystery Duel and 3v3 Elimination game modes from the Custom Game menu
+--Added a "Stay as Team" feature, which allows players to remain grouped with their teammates after the match has ended
+HERO BALANCE UPDATES
+-Symmetra
+--Photon Barrier (New Ability)
+---Replaces her existing Photon Shield ability
+---Generates a large energy barrier in front of Symmetra that blocks enemy fire as it travels forward
+--Shield Generator (New Ultimate Ability Option)
+---Symmetra's Ultimate ability now offers a choice between Teleporter and a new option: Shield Generator
+---Shield Generator places a device that grants additional shields to allies within its effective radius (regardless of barriers, walls, or obstacles between them and the Shield Generator)
+--Photon Projector (Primary Fire)
+---Range has been increased from 5 meters to 7 meters
+--Sentry Turret
+---Turrets that can be carried have been increased from 3 turrets to 6 turrets
+---Cooldown has been reduced from 12 seconds to 10 seconds
+--Photon Shield
+---Replaced with the new Photon Barrier ability
+--Teleporter
+---Health has been decreased from 200 to 50
+---Shields have been increased from 0 to 350
+-Developer Comments: We wanted to address two main issues with Symmetra. First, on the whole, we felt that she didn't feel active enough. Second, due to the nature of her Teleporter, she felt weak in certain situations on different maps and game modes.
+-To address the first point, we replaced her more passive Photon Shield ability with a much more active ability: Photon Barrier. Now, Symmetra can help lead the charge on offense or help shut down a big push on defense by actively blocking damage for your team.
+-For the second point, we noticed players would often switch off of Symmetra once they found themselves in a situation where her Teleporter wasn"t as useful. For example, when playing her on defense on an Assault map, players often used her to defend the first capture point, then quickly switched to another hero if that point fell. To help her feel more useful in more situations, we've given her an alternative to her Teleporter. The Shield Generator is just as important for the enemy to deal with, but is useful in more situations. 
+-The turret changes allow her to rebuild her turret nests faster. Even if all her turrets are wiped out, it's now easier for players to build them all back up before the next push. 
+-We're also increasing the range on her Photon Projector to make it easier for her to build up and keep a powerful charge on her target.
+-Zarya
+--Particle Barrier/Projected Barrier
+---Attacks like Reinhardt's Fire Strike or Hanzo's Dragonstrike that deal damage to both the barrier and the hero within the barrier, no longer deal damage to the barrier twice
+-Developer Comments: This is a bug fix, but we think it's significant enough to warrant a separate note. We've had a long-standing bug that caused "piercing" damage to hit Zarya's barrier twice. Sometimes this benefited Zarya (for example, jumping in front of Reinhardt's Fire Strike was a good way to generate a large amount of energy quickly), and sometimes it really hurt her (Genji's Dragonblade, for example, would cut through her shield in one swing, instead of two). This change isn't intended to buff or a nerf to Zarya. We're simply trying get her abilities working as they should, and we'll keep an eye on how it affects her balance.
+BUG FIXES
+-General
+--[PS4 Pro] Fixed a bug that could obscure or hide UI elements on a 4K display
+--Fixed a bug that allowed more than one player to select the same hero on the Assemble Team screen, but forced one player to reselect after spawning
+--Fixed a bug that forced players to join Play vs. AI matches when attempting to spectate a friend
+--Fixed a bug causing a black screen to appear if players switched heroes as the round ended
+--[PC] Fixed a bug that allowed the 'H' key to close the Hero Select screen even after that function had been bound to a different key
+-AI
+--Botsare no longer able to use abilities or attack enemies after a Control match has ended
+--[Console] Fixed a bug that prevented Ana from being selected in 1v1 matches
+-Arcade
+--Fixed a bug that prevented players from correctly receiving experience after joining an in-progress 3v3 match
+--Fixed a bug preventing BattleTags from being displayed correctly during Highlight Intros and Plays of the Game in 1v1 and 3v3 matches
+--Fixed a bug causing the respawn timer to remain visible during 3v3 matches
+-Competitive Play
+--Fixed a bug that allowed more than one player to select the same hero in rare situations
+-Heroes
+--Fixed a bug preventing the nameplate above D.Va's mech from disappearing while being destroyed, and displaying a "0" instead of the player's name
+--Fixed a bug causing the "You" indicator (which typically only appears during killcam footage) to appear when D.Va looks directly at the ground
+--D.Va's video tutorial now includes changes made to her Defense Matrix resource mechanics
+--Fixed a bug causing Genji's sword to clip through its scabbard
+--Fixed a bug causing Junkrat's Steel Trap animation to play when detonating a Concussion Mine
+--Fixed a bug causing Reinhardt's hammer to become invisible to some players after using an emote
+--Fixed a bug that interfered with the accuracy of the alternate fire for Roadhog's Scrap Gun
+--Fixed a bug that allowed players' Ultimate ability voice lines to play uninterrupted, even if they were hacked by Sombra during use
+--Fixed a bug preventing the sound effects from Torbjörn's hammer from being played when his Ultimate ability was activated
+--Fixed a bug causing Widowmaker's Grappling Hook to begin its cooldown after going through Symmetra's Teleporter
+--[Console] Fixed a bug that allowed Mercy to receive Ultimate charge when using her Caduceus Staff to increase teammates' damage when they're not damaging enemies
+--[Console] Fixed a bug preventing Reinhardt from deactivating his Barrier Field after being hacked by Sombra
+--[Console] Fixed a bug preventing Sombra's Hack from cancelling Soldier: 76's Sprint ability
+--[Console] Sombra no longer receives credit toward her on-fire meter when her EMP ultimate hits Symmetra's turrets
+--[Console] When multiple Sombras attempt to hack a health pack, the player that initialized the hack first will now control it
+--[Console] Fixed a bug preventing Sombra's Opportunist passive ability from seeing practice bots through the walls on the Practice Range
+--[Console] Fixed a bug preventing Sombra's reticle from consistently expanding while firing her Machine Pistol
+-Maps
+--Fixed a bug that allowed Sombra to reach unintended locations on Watchpoint: Gibraltar
+--Fixed a bug that prevented Mercy from using Resurrect in rare situations on King's Row
