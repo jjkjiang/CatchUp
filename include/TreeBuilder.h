@@ -18,26 +18,8 @@ public:
         root = NULL;
     }
 
-    void recursiveRemove(TreeEntry* entry) {
-        if (entry == NULL)
-            return;
-
-        if (entry->getChildren() == NULL) {
-            delete entry;
-            return;
-        }
-
-        for (auto& i : *entry->getChildren()) {
-            recursiveRemove(i);
-        }
-
-        delete entry->getChildren();
-        delete entry;
-        return;
-    }
-
     void build(std::string filename) {
-        recursiveRemove(root);
+        delete root;
         root = new TreeEntry("", Date());
 
         std::fstream fs;

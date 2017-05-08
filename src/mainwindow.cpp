@@ -6,6 +6,9 @@
 #include <QMessageBox>
 #include <QInputDialog>
 #include <algorithm>
+#include <codecvt>
+#include <string>
+#include <locale>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -80,10 +83,6 @@ void MainWindow::open() {
     treeBuilder.build(filename.toStdString());
     treeFilterer.setRoot(treeBuilder.getRoot());
     filter();
-
-    updateTextBrowser();
-
-    //QMessageBox::information(this,tr("File Name"),filename);
 }
 
 void MainWindow::on_dateEdit_editingFinished()
@@ -108,8 +107,11 @@ void MainWindow::filter() {
 }
 
 void MainWindow::updateTextBrowser() {
+    std::string result = treeFilterer.getResult();
 
-    ui->textBrowser->setText(QString::fromStdString(treeFilterer.getResult()));
+    QString temp = QString::fromStdString(result);
+
+    ui->textBrowser->setText(temp);
 }
 
 
