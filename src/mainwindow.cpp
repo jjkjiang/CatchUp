@@ -102,7 +102,7 @@ void MainWindow::on_dateEdit_2_editingFinished()
 
 void MainWindow::filter() {
     //filters based on tree
-    treeFilterer.filter();
+    treeFilterer.filterDP();
 
     updateTextBrowser();
 }

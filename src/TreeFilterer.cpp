@@ -61,8 +61,10 @@ void TreeFilterer::setShowDate(bool showDate) {
     TreeFilterer::showDate = showDate;
 }
 
+
+
 void TreeFilterer::filter() {
-    out.str("");\
+    out.str("");
     out.clear();
 
     // different if statements to prevent dereferencing null ptrs
@@ -91,9 +93,6 @@ void TreeFilterer::filter(TreeEntry* entry, int indent) {
             out << "[" <<entry->getDate() << "] ";
         out << entry->getContent() << std::endl;
 
-
-        // when you use auto for loops to save work but
-        // actually maybe do more figuring out whats wrong
         if (entry->getChildren() == NULL)
             return;
 
@@ -105,4 +104,55 @@ void TreeFilterer::filter(TreeEntry* entry, int indent) {
 
 std::string TreeFilterer::getResult() {
     return out.str();
+}
+
+/*
+ * goal: filter() checks whether or not to print something based on if there exists a child that
+ * is valid. So, we recursively go and search for something. This creates an issue of overlapping
+ * subproblems, and we are doing extra work - so, we can try fixing this with dynamic programming.
+ *
+ */
+void TreeFilterer::filterDP() {
+    out.str("");
+    out.clear();
+
+    if (root == NULL)
+        return;
+
+    if (root->getChildren() == NULL)
+        return;
+
+    TreeEntry* memo = new TreeEntry("0", root->getDate());
+
+    for (int i = 0; i < root->getChildren()->size(); i++) {
+        memo->addChild(new TreeEntry("0", root->getChildren()->at(i)->getDate()));
+        filterDP(root->getChildren()->at(i), 0, memo->getChildren()->at(i));
+    }
+}
+
+
+void TreeFilterer::filterDP(TreeEntry *entry, int indent, TreeEntry *memo) {
+    if (entry->hasFittingChildDP(startDate, endDate, memo)) {
+        for (int i = 0; i < indent; i++)
+            out << indentStr;
+
+        if (showDate && entry->getChildren() == NULL)
+            out << "[" <<entry->getDate() << "] ";
+        else if (showDate && entry->getChildren()->size() < 2)
+            out << "[" <<entry->getDate() << "] ";
+        out << entry->getContent() << std::endl;
+
+        if (entry->getChildren() == NULL)
+            return;
+
+        if (entry->getChildren()->size() != memo->getChildren()->size()) {
+            std::cout << entry->getChildren()->size() << " " << memo->getChildren()->size() << std::endl;
+            std::cout << "in item " << entry->getContent() << std::endl;
+
+            throw std::runtime_error("wtf");
+        }
+
+        for (int i = 0; i < entry->getChildren()->size(); i++)
+            filterDP(entry->getChildren()->at(i), indent + 1, memo->getChildren()->at(i));
+    }
 }

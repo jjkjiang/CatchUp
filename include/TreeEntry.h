@@ -20,8 +20,24 @@ public:
         children = NULL;
     }
 
+    ~TreeEntry() {
+        if (children == NULL) {
+            return;
+        }
+
+        for (int i = 0; i < children->size(); i++) {
+            delete children->at(i);
+        }
+
+        delete children;
+    }
+
     const std::string &getContent() const {
         return content;
+    }
+
+    void setContent(const std::string &content) {
+        TreeEntry::content = content;
     }
 
     const Date &getDate() const {
@@ -49,6 +65,35 @@ public:
         for (auto& i : *children) {
             if (i->hasFittingChild(startDate, endDate))
                 return true;
+        }
+
+        return false;
+    }
+
+    bool hasFittingChildDP(Date startDate, Date endDate, TreeEntry* memo) {
+        if (memo->getContent() == "1")
+            return true;
+
+        if (children == NULL && startDate < date && endDate > date) {
+            memo->setContent("1");
+            return true;
+        }
+
+        if (children == NULL)
+            return false;
+
+        if (memo->getChildren() == NULL) {
+            for (auto& i : *children) {
+                TreeEntry* nextMemo = new TreeEntry("0", i->getDate());
+                memo->addChild(nextMemo);
+            }
+        }
+
+        for (int i = 0; i < children->size(); i++) {
+            if (children->at(i)->hasFittingChildDP(startDate, endDate, memo->getChildren()->at(i))) {
+                memo->setContent("1");
+                return true;
+            }
         }
 
         return false;

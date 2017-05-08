@@ -37,6 +37,9 @@ public:
 
     void filter();
     void filter(TreeEntry* entry, int indent);
+
+    void filterDP();
+    void filterDP(TreeEntry *entry, int indent, TreeEntry *memo);
     std::string getResult();
 };
 
